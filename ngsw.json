@@ -1,0 +1,100 @@
+{
+  "configVersion": 1,
+  "timestamp": 1654621661590,
+  "index": "/pec5DAF/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pec5DAF/favicon.ico",
+        "/pec5DAF/index.html",
+        "/pec5DAF/main.a8a3d46786153191.js",
+        "/pec5DAF/manifest.webmanifest",
+        "/pec5DAF/polyfills.d3f7b04867e07d94.js",
+        "/pec5DAF/runtime.2bc0d6efca296228.js",
+        "/pec5DAF/styles.f26cdcb57409ceba.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pec5DAF/assets/css/animate.css",
+        "/pec5DAF/assets/icons/icon-128x128.png",
+        "/pec5DAF/assets/icons/icon-144x144.png",
+        "/pec5DAF/assets/icons/icon-152x152.png",
+        "/pec5DAF/assets/icons/icon-192x192.png",
+        "/pec5DAF/assets/icons/icon-384x384.png",
+        "/pec5DAF/assets/icons/icon-512x512.png",
+        "/pec5DAF/assets/icons/icon-72x72.png",
+        "/pec5DAF/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "countries-api",
+      "patterns": [
+        "https:\\/\\/restcountries\\.com\\/v2\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/pec5DAF/assets/css/animate.css": "1d5c16e4a56f56ceeff595897da8673875104012",
+    "/pec5DAF/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/pec5DAF/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/pec5DAF/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/pec5DAF/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/pec5DAF/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/pec5DAF/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/pec5DAF/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/pec5DAF/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/pec5DAF/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/pec5DAF/index.html": "552225061cf9a0e937e476038b68e8f1a1acfb0c",
+    "/pec5DAF/main.a8a3d46786153191.js": "8985b55d6ad4ab821aa59c2ca7998d1e61aff5f2",
+    "/pec5DAF/manifest.webmanifest": "c5e5e1d4b292151da86bc6953f1688575e286848",
+    "/pec5DAF/polyfills.d3f7b04867e07d94.js": "b1340ed19178fd1ff4701104a724d17647ae8f64",
+    "/pec5DAF/runtime.2bc0d6efca296228.js": "3c0f99de6aea914534e8398a81fcb1500675c667",
+    "/pec5DAF/styles.f26cdcb57409ceba.css": "15675f4eafadd6fbe22d03e4b29f87edb0e9d4a2"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
