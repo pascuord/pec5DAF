@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  <div
+    *ngFor="let country of countryArray"
+    class="row animate_animated animate_bounce animate_fadeIn"
+  >
+    <div class="col-md-9">
+      <h1>{{ country.name }}</h1>
+      <mat-tab-group mat-align-tabs="start">
+        <mat-tab label="Informacion general">
+          <p><strong>Capital:</strong> {{ country.capital }}</p>
+          <p><strong>Subregion:</strong> {{ country.subregion }}</p>
+          <p><strong>Region:</strong> {{ country.region }}</p>
+        </mat-tab>
+        <mat-tab label="Poblacion">
+          <p><strong>Poblacion:</strong> {{ country.population }}</p></mat-tab
+        >
+        <mat-tab label="Otros">
+          <p><strong>Denominacion:</strong> {{ country.demonym }}</p>
+          <p>
+            <strong>Codigo numerico:</strong> {{ country.numericCode }}
+          </p></mat-tab
+        >
+      </mat-tab-group>
+      <!--  -->
+    </div>
+  </div>
+  <div class="col-md-3">
+    <a class="btn btn-danger" routerLink="/">Atras</a>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Countries</h1>
+  <ul class="list-group">
+    <a
+      *ngFor="let country of countries"
+      [routerLink]="['/country',country.name]"
+      class="list-group-item list-group-item-action animate_animated animate_bounce animate_fadeIn"
+      >{{ country.numericCode }}-{{ country.name }}</a
+    >
+  </ul>
+</div>
